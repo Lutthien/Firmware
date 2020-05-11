@@ -49,7 +49,7 @@ from pymavlink import mavutil
 from std_msgs.msg import Header
 from threading import Thread
 from tf.transformations import quaternion_from_euler
-
+from six.moves import xrange
 
 class MavrosOffboardAttctlTest(MavrosTestCommon):
     """

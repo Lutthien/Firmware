@@ -11,7 +11,7 @@ from mavros_msgs.srv import CommandBool, ParamGet, SetMode, WaypointClear, \
                             WaypointPush
 from pymavlink import mavutil
 from sensor_msgs.msg import NavSatFix
-
+from six.moves import xrange
 
 class MavrosTestCommon(unittest.TestCase):
     def __init__(self, *args):
